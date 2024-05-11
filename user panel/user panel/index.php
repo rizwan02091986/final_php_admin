@@ -43,7 +43,7 @@
 
 							<br>
 
-							<h2 class="h2">Featured Products</h2>
+							<h2 class="h2">Featured Category</h2>
 
 							<!-- Products -->
 							<section class="tiles">
@@ -68,7 +68,35 @@
 								</article>
                                 <?php } ?>
 							</section>
+                            <br>
+							<p class="text-center"><a href="products.html">More Books &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							
+							<br>
+                            <h2 class="h2">Featured Authors</h2> 
+                            <section class="tiles">
+                                <?php
+                                $sql = "select * from authors order by id asc limit 3";
+                                $result = mysqli_query($conn,$sql);
+                                while($rows = mysqli_fetch_assoc($result)){
+                                ?>
+								<article class="style1">
+									<span class="image">
+                                    <?php
+										echo "<img src=\"../../admin/images/author/{$rows['image']} \" height=300px; width=300px>"
+                                        ?>
+									</span>
+									<a href="product-details.html">
+										<h2><?php echo $rows['author_name'] ?></h2>
+                                        <br>										
+										<p><strong><?php echo $rows['dob'] ?></strong></p>
+                                        <br>										
+										<p><strong><?php echo $rows['location'] ?></strong></p>
 
+									</a>
+								</article>
+                                <?php } ?>
+							</section>
+                            <br>
 							<p class="text-center"><a href="products.html">More Books &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 							
 							<br>
