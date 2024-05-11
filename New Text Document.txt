@@ -1,0 +1,143 @@
+// var yourAge = prompt("How old are you?");
+
+// var myAge = 25; 
+
+// if (yourAge > myAge) {
+//   confirm('You are older than me by ' + (yourAge - myAge) + ' years');
+// } else if (yourAge < myAge) {
+//   confirm('You are younger than me by ' + (myAge - yourAge) + ' years');
+// } else {
+//   confirm('Your age is the same as mine - 25');
+// }
+// Array.prototype.customReverse = function () {
+//     let left = 0;
+//     let right = this.length - 1;
+
+//     while(left < right) {
+//         let temp = this[left];
+//         this[left] = this[right];
+//         this[right] = temp;
+//         left++;
+//         right--;
+//     }
+//     return this;
+// }
+
+// const output = [1, 'b', 'abc', { name: 'Jonh' }, 10];
+
+// console.log(output.customReverse());
+
+// Array.prototype.customForEach = function (callback, thisArg) {
+//     for (let i = 0; i < this.length; i++) {
+//         callback.call(thisArg, this[i], i, this);
+//     }
+// }
+
+// const output = [1, 2, 3, 4, 5];
+
+// output.customForEach(function(elem, index, arr) {
+//     console.log(this); 
+// }, output);
+
+// Array.prototype.customIndexOf = function (value, fromIndex) {
+//     fromIndex = fromIndex || 0;
+
+//     for (let i = fromIndex; i < this.length; i++) {
+//         if (this[i] === value) {
+//             return i;
+//         }
+//     }
+
+//     return -1;
+// }
+
+// const output = [1, 2, 3, 4, 5];
+
+// console.log(output.customIndexOf(3)); 
+// console.log(output.customIndexOf(6)); 
+// console.log(output.customIndexOf(2, 3)); 
+
+// Array.prototype.customLastIndexOf = function (value, fromIndex) {
+//     fromIndex = fromIndex || this.length - 1;
+
+//     for (let i = fromIndex; i >= 0; i--) {
+//         if (this[i] === value) {
+//             return i;
+//         }
+//     }
+
+//     return -1;
+// }
+
+// const output = [1, 2, 3, 4, 5];
+
+// console.log(output.customLastIndexOf(3)); 
+// console.log(output.customLastIndexOf(6)); 
+// console.log(output.customLastIndexOf(2, 3));
+
+
+// const ceilValue = Math.ceil(4.2); 
+// const floorValue = Math.floor(4.2); 
+// const randomNumber1 = Math.random(); 
+// const randomNumber2 = Math.floor(Math.random() * 10); 
+
+// console.log(ceilValue);
+// console.log(floorValue);
+// console.log(randomNumber2);
+// console.log(randomNumber1);
+
+
+// function sum(X1, X2, Y1, Y2) {
+//     return ((X1 + X2) * (Y1 + Y2)) / 2;
+//   }
+  
+//   const X1 = 1;
+//   const X2 = 2;
+//   const Y1 = 3;
+//   const Y2 = 4;
+//   const result = sum(X1, X2, Y1, Y2);
+//   console.log(result);
+
+let colors = ['blue', 'yellow', 'black', 'red', 'brown', 'orange', 'cyan', 'pink'];
+
+let button = document.getElementById('button');
+
+button.addEventListener('click', function () {
+    // random function
+    let randomColor = colors[Math.floor(Math.random() * colors.length)]
+    let container = document.getElementById('container');
+    container.style.background = randomColor;
+});
+
+// let number1 = [321,322,333,344,355];
+// let b = number1.toString();
+// console.log(b);
+// console.log(typeof b);
+
+//Join Method
+// let number2 = [441,442,443,444,445];
+// let c = number2.join(" | ");
+// console.log(c, typeof c);
+
+//Pop Method
+// let number3 = [551,552,553,554,555];
+// let d = number3.pop();
+// console.log(number3,"This is a remove value ",d)
+
+//Push Method
+// let number4 = [661,662,663,664,665];
+// let e = number4.push(666);
+// console.log(number4,e);
+
+// function sub(x1,x2,y1,y2) {
+    //     return ((x1+x2)/(y1+y2))+2;
+    // }
+    
+    // let a =  parseInt(prompt("enter number1"));
+    // let b =  parseInt(prompt("enter number2"));
+    // let c =  parseInt(prompt("enter number3"));
+    // let d =  parseInt(prompt("enter number4"));
+    
+    // let add = sub(a,b,c,d);
+    // document.write("the total number is:",add);
+
