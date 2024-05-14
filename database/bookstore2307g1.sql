@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2024 at 05:47 PM
+-- Generation Time: May 11, 2024 at 05:50 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,7 +40,12 @@ CREATE TABLE `authors` (
 --
 
 INSERT INTO `authors` (`id`, `author_name`, `dob`, `location`, `image`) VALUES
-(1, 'Waqas', '2024-01-17', 'karachi', 'HD-wallpaper-bad-boy-attitude-attitude-boy-badboy-badboy-boys-love-thumbnail.jpg');
+(1, 'Waqas', '2024-01-17', 'karachi', 'HD-wallpaper-bad-boy-attitude-attitude-boy-badboy-badboy-boys-love-thumbnail.jpg'),
+(2, 'Muzamil', '1975-02-10', 'New York', 'books pic.jpg'),
+(3, 'Abdullah', '1986-02-09', 'Belgium', 'download (4).jfif'),
+(4, 'Haroon', '1981-10-10', 'Denmark', 'download (3).jfif'),
+(5, 'Atif', '1945-07-08', 'Australia', 'download (3).jfif'),
+(6, 'Noor Alam', '1958-04-04', 'India', 'download (1).jfif');
 
 -- --------------------------------------------------------
 
@@ -82,7 +87,12 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `CategoryName`, `CategoryImage`) VALUES
-(3, 'Horror', 'HD-wallpaper-bad-boy-attitude-attitude-boys-attitude-badboy-badboy-boys-boys-fire-football-ghost.jpg');
+(3, 'Horror', 'HD-wallpaper-bad-boy-attitude-attitude-boys-attitude-badboy-badboy-boys-boys-fire-football-ghost.jpg'),
+(13, 'Sports', 'download.jfif'),
+(14, 'Car', 'download (4).jfif'),
+(15, 'Disney', 'download (3).jfif'),
+(16, 'Dollar', 'download (2).jfif'),
+(17, 'Couple', 'download (5).jfif');
 
 -- --------------------------------------------------------
 
@@ -170,19 +180,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `authors`
 --
 ALTER TABLE `authors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `role`
